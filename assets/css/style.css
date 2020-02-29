@@ -1,0 +1,882 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Book'), url('assets/fonts/FranklinGothic/FRABK.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Book Italic'), url('assets/fonts/FranklinGothic/FRABKIT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Demi'), url('assets/fonts/FranklinGothic/FRADM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Demi Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Demi Cond'), url('assets/fonts/FranklinGothic/FRADMCN.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Demi Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Demi Italic'), url('assets/fonts/FranklinGothic/FRADMIT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Heavy'), url('assets/fonts/FranklinGothic/FRAHV.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Heavy Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Heavy Italic'), url('assets/fonts/FranklinGothic/FRAHVIT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Medium'), url('assets/fonts/FranklinGothic/framd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Medium Cond'), url('assets/fonts/FranklinGothic/FRAMDCN.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Medium Italic'), url('assets/fonts/FranklinGothic/framdit.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibri'), url('assets/fonts/Calibri/calibri.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Franklin Gothic Book';
+    font-size: 17px;
+    line-height: 1.1;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;/*0 0 10px*/
+    line-height: 1.1; 
+}
+
+h1{
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 35px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 28px;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 22px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 16px;
+}
+
+img{
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+div{
+    display: block;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.section{
+    margin-bottom: 52px;
+}
+
+.container{
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content-container{
+    padding: 5px;
+}
+
+.details-container{
+    padding: 5px;
+}
+
+.clearfix:before{
+    display: table;
+    content: " ";
+}
+
+.clearfix:after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.column-100{
+    width: 100%;
+}
+
+.column-50{
+    width: 50%;
+    float: left;
+}
+
+.column-33{
+    width: 33.33%;
+    float: left;
+}
+
+.column-25{
+    width: 25%;
+    float: left;
+}
+
+/*Header*/
+.secondary-menu{
+    padding-bottom: 5px;
+}
+
+.secondary-menu .nav-menu .list-menu{
+    float: right;
+    padding-right: 6px;
+    padding-bottom: 4px;
+}
+
+.list-menu{
+    padding-top: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.secondary-menu .nav-menu .list-menu li{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.secondary-menu .nav-menu .list-menu li:last-child{
+    border: none;
+}
+
+.secondary-menu .nav-menu .list-menu li a{
+    display: block;
+    border-radius: 50%;
+}
+
+.secondary-menu .nav-menu .list-menu li a:hover{
+    background-color: #000000;
+}
+
+.secondary-menu .nav-menu .list-menu li a i{
+    display: block;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+}
+
+.primary-menu{
+    max-width: 1048px;
+    margin: 0 auto;
+}
+
+.primary-menu .nav-menu{
+    padding-top: 6px;
+    padding-bottom: 75px;
+}
+
+.primary-menu .nav-menu .list-menu {
+    padding-left: 6px;
+}
+
+.primary-menu .nav-menu .list-menu li{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.primary-menu .nav-menu .list-menu li a{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 1.1;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.044em;
+}
+
+.creator-logo{
+    float: left;
+    margin: -73px -6px 0px -4px;
+}
+
+.creator-logo .logo-img{
+    width: 170px;
+    height: 140px;
+}
+
+/*Home*/
+.home{
+    margin-bottom: 0;
+}
+
+.home .container{
+    height: 641px;
+}
+
+.home-content{
+    height: inherit;
+    background-size: cover;
+    padding: 92px 178px 0;
+}
+
+.home-content .photo-content{
+    float: left;
+    display: inline-block;
+}
+
+.photo-dummy{
+    display: none;
+}
+
+.home-content .text-content{
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    letter-spacing: 0.001em;
+    color: #ffffff;
+    text-align: right;
+}
+
+.home-content .text-content p{
+    margin: 0;
+}
+
+.home-content .text-content .text-name {
+    text-transform: uppercase;
+    font-size: 83px;
+    line-height: 76px;
+    margin-top: 15px;
+    margin-left: -402px;
+    max-width: 400px;
+    float: right;
+}
+
+.home-content .text-content .i-am{
+    float: left;
+    display: inline-block;
+    padding-top: 29px;
+    margin-left: -10px;
+}
+
+.home-content .text-content .description{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.0173em;
+    max-width: 480px;
+    float: right;
+    margin-top: -146px;
+}
+
+/*Section Title*/
+.section-title h2{
+    font-size: 57px;
+    letter-spacing: 0.014em;
+    line-height: 50px;
+}
+
+/*About*/
+.about{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.about .section-title{
+    padding-bottom: 33px;
+}
+
+.about .container{
+    padding: 120px 240px 96px;
+}
+
+.about .content-container, .about .details-container{
+    padding: 0;
+}
+
+.about .details-container .clearfix {
+    padding-top: 13px;
+}
+
+.about-icon{
+    width: 77px;
+    height: 81px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.about-icon-bg{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+
+.about-content .text-content {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    letter-spacing: 0.007em;
+    line-height: 40px;
+    padding-top: 13px;
+    padding-right: 32px;
+}
+
+.about-content .text-content span{
+    margin-right: 92px;
+}
+
+/*Skills*/
+.skills{
+    margin-bottom: 0;
+}
+
+.skills .container{
+    max-width: 1160px;
+    border-radius: 50px;
+}
+
+.skills .container .content-container{
+    padding: 124px 156px;
+}
+
+.skills .container .content-container .section-title{
+    text-align: center;
+    padding-bottom: 69px;
+}
+
+.skills .container .content-container .details-container{
+    padding: 0;
+}
+
+.skills .container .content-container .details-container .clearfix {
+    padding: 14px 0;
+}
+
+.skills-content.column-33 ,.skills-content.column-50{
+    width: 25%;
+}
+
+.skills-content.column-33:first-of-type {
+    margin-left: 106px;
+}
+
+.skills-content.column-33:last-child {
+    margin-right: 106px;
+}
+
+.skills-content.column-50:first-of-type {
+    margin-left: 206px;
+}
+
+.skills-content .skills-img{
+    text-align: center;
+}
+
+.skills-content .skills-img img{
+    width: 180px;
+    height: 125px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skills-content .skills-img p{
+    font-size: 25px;
+    line-height: 22px;
+}
+
+/*Project*/
+.section.projects{
+    margin-bottom: 0;
+}
+
+.projects .content-container {
+    padding-bottom: 247px;
+}
+
+.projects .section-title{
+    color: #ffffff;
+    padding: 141px 148px 43px;
+}
+
+.projects .content-container .details-container{
+    padding: 0px;
+}
+
+.projects .container .content-container .details-container .clearfix {
+    padding: 27px 0;
+}
+
+.projects-content.column-50:first-of-type{
+    padding-left: 151px;
+}
+
+.projects-content.column-50:last-child {
+    padding-left: 13px;
+}
+
+.projects-content.column-100 {
+    padding: 0 359px;
+}
+
+.projects-content .projects-img{
+    width: 362px;
+    height: 275px;
+    border: 1px solid #ffffff; 
+}
+
+.projects-content .projects-img img{
+    width: 358px;
+    height: 267px;
+    display: block;
+    margin: 3px auto;
+}
+
+.projects-text{
+    color: #ffffff;
+    max-width: 365px;
+}
+
+.projects-text p {
+    margin: 0;
+}
+
+.projects-text .title{
+    font-family: 'Franklin Gothic Medium Cond';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    padding-top: 19px;
+}
+
+.projects-text .description {
+    padding-top: 7px;
+    line-height: 16px;
+}
+
+/*Div Contact*/
+.contact .container{
+    background: transparent;
+}
+
+.contact{
+    margin-bottom: -47px;
+    margin-top: -53px;
+}
+
+.div-contact{
+    min-width: 573px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #000000;
+    display: inline-block;
+    text-align: center; 
+}
+
+.text-contact{
+    font-size: 23px;
+    letter-spacing: 0.04em;
+    padding-left: 36px;
+    padding-top: 9px;
+    display: inline-block;
+}
+
+.btn-contact{
+    font-family: 'Franklin Gothic Demi Cond';
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.1;
+    letter-spacing: 0.032em;
+    font-size: 23px;
+    text-decoration: none;
+    border-radius: 60px;
+    border: 4px solid #000000;
+    padding: 10px 36px;
+    margin: 18px 33px;
+    min-width: 244px;
+    display: inline-block;
+}
+
+/*Footer*/
+.main-footer .container{
+    padding-bottom: 102px;
+}
+
+.main-footer .container .secondary-menu .nav-menu .list-menu{
+    padding-right: 0;
+    padding-top: 167px;
+}
+
+.main-footer .container .secondary-menu .nav-menu .list-menu li:last-child{
+    padding-right: 0;
+}
+
+.footer-text {
+    margin-top: -87px;
+}
+
+.footer-text .text-content{
+    font-size: 16px;
+    line-height: 0.44em;
+    letter-spacing: 0.028em;
+}
+
+.footer-text .text-content .owner{
+    padding-bottom: 18px;
+}
+
+.footer-text .text-content p i{
+    display: inline-table;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+}
+
+.laravel-icon{
+    margin: -19px -3px -19px -13px;
+}
+
+.vuejs-icon{
+    margin: -19px -3px -19px -13px;
+}
+
+@media(max-width: 1199px){
+    .skills .container{
+        border-radius: 0px;
+    }
+
+    .skills-content.column-50:first-of-type {
+        margin-left: 149px;
+    }
+}
+
+@media(max-width: 1023px){
+    .home-content{
+        padding: 92px 100px 0;
+    }
+
+    .about .container{
+        padding: 120px 120px 96px
+    }
+
+    .skills .container .content-container {
+        padding: 124px 100px;
+    }
+}
+
+/*Laptop 1024*/
+@media(max-width: 991px){
+    .home-content{
+        height: inherit;
+        background-size: cover;
+    }
+
+    .about .container {
+        padding: 120px 120px 96px;
+    }
+
+    .skills .container {
+        border-radius: 0;
+    }
+
+    .skills .container .content-container {
+        padding: 124px 100px;
+    }
+
+    .skills-content.column-50:first-of-type {
+        margin-left: 167px;
+    }
+
+    .projects .section-title {
+        color: #ffffff;
+        padding: 141px 67px 43px;
+    }
+
+    .projects-content.column-50:first-of-type {
+        padding-left: 70px;
+    }
+
+    .projects-content.column-100 {
+        padding: 0 275px;
+    }
+}
+
+/*Tablet 768*/
+@media(max-width: 767px){
+    .main-header .container .secondary-menu{
+        display: none;
+    }
+
+    .creator-logo{
+        float: none;
+        margin: 0;
+    }
+
+    .creator-logo .logo-img{
+        margin: 0 auto;
+    }
+
+    .primary-menu .nav-menu {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .home-content .photo-content{
+        display: none;
+    }
+
+    .photo-dummy{
+        max-width: 220px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .photo-dummy img{
+        border-radius: 50%;
+    }
+
+    .home-content .text-content{
+        padding-top: 26px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .home-content .text-content .i-am {
+        float: none;
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .home-content .text-content .text-name {
+        font-size: 40px;
+        line-height: 1.1;
+        float: none;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .home-content .text-content .description{
+        font-size: 18px;
+        line-height: 1.1;
+        margin: 0;
+        padding-top: 5px;
+        float: none;
+    }
+
+    .section-title h2{
+        font-size: 30px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .about .container{
+        padding: 50px;
+    }
+
+    .about .section-title {
+        padding-bottom: 20px;
+    }
+
+    .about-content .text-content{
+        font-size: 20px;
+        line-height: 1.1;
+        padding-top: 46px;
+    }
+
+    .skills .container .content-container .section-title {
+        padding-bottom: 40px;
+    }
+
+    .skills .container .content-container {
+        padding: 44px 5px;
+    }
+
+    .projects .section-title {
+        text-align: center;
+        color: #ffffff;
+        padding: 37px 0px 0px;
+    }
+
+    .projects-content.column-50{
+        padding: 45px 0 20px;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .projects-content.column-50:first-of-type{
+        padding-left: 0px;
+    }
+
+    .projects-content.column-50:last-child{
+        padding-left: 0px;
+    }
+
+    .projects-content.column-100{
+        padding: 0;
+    }
+
+    .projects-img, .projects-text{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-footer .container .secondary-menu .nav-menu .list-menu{
+        float: none;
+        text-align: center;
+        padding: 100px 0 0 0;
+    }
+
+    .main-footer .container .secondary-menu .nav-menu .list-menu li:last-child {
+        padding-right: 16px;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 667px){
+    .primary-menu .nav-menu .list-menu{
+        padding: 0;
+    }
+
+    .home-content{
+        padding: 60px 30px 0px;
+    }
+
+    .home-content .text-content .text-name{
+        max-width: 450px;
+        display: inline-block;
+    }
+
+    .column-25, .column-33, .column-50{
+        width: 100%;
+        float: none;
+    }
+
+    .about-icon{
+        position: unset;
+        margin: 0 auto;
+    }
+
+    .about-content.column-50{
+        padding-top: 30px;
+    }
+
+    .about-content.column-100{
+        padding-top: 20px;
+    }
+
+    .about-content .text-content{
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 0;
+    }
+
+    .about-content .text-content span {
+        display: none;
+    }
+
+    .skills-content.column-50:first-of-type {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .skills-content.column-50:last-child {
+        margin-right: 0; 
+        width: 100%;
+    }
+
+    .div-contact{
+        min-width: 0;
+        padding-bottom: 41px; 
+    }
+
+    .div-contact .text-contact{
+        margin-left: 0;
+        padding: 0 77px;
+    }
+
+    .div-contact .btn-contact{
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+}
