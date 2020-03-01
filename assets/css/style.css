@@ -759,7 +759,7 @@ ul li{
     }
 
     .skills .container .content-container .section-title {
-        padding-bottom: 40px;
+        padding: 0 15px 40px;
     }
 
     .skills .container .content-container {
@@ -813,6 +813,10 @@ ul li{
 }
 
 @media(max-width: 667px){
+    .container{
+        width: 100%;
+    }
+
     .primary-menu .nav-menu .list-menu{
         padding: 0;
     }
@@ -829,6 +833,7 @@ ul li{
     .column-25, .column-33, .column-50{
         width: 100%;
         float: none;
+        margin-bottom: 20px;
     }
 
     .about-icon{
@@ -854,6 +859,10 @@ ul li{
         display: none;
     }
 
+    .skills-content.column-50, .skills-content.column-33, .skills-content.column-25{
+        border-bottom: 4px solid #a9a9a9;
+    }
+
     .skills-content.column-50:first-of-type {
         margin-left: 0px;
         width: 100%;
@@ -862,6 +871,34 @@ ul li{
     .skills-content.column-50:last-child {
         margin-right: 0; 
         width: 100%;
+    }
+
+    .skills .container .content-container .details-container .clearfix:last-child .skills-content.column-50:last-child{
+        border: none;
+    }
+
+    .skills .container .content-container .details-container .clearfix:last-child .skills-content.column-33:last-child{
+        border: none;
+    }
+
+    .skills .container .content-container .details-container .clearfix:last-child .skills-content.column-25:last-child{
+        border: none;
+    }
+
+    .projects-content .projects-img{
+        width: auto;
+    }
+
+    .projects .content-container{
+        padding-bottom: 180px;
+    }
+
+    .contact .container{
+        width: 80%;
+    }
+
+    .contact{
+        margin-bottom: -168px;
     }
 
     .div-contact{
@@ -878,5 +915,13 @@ ul li{
         float: none;
         margin: 0;
         text-align: center;
+    }
+
+    .main-footer .container{
+        padding-top: 135px;
+    }
+
+    .footer-text .text-content{
+        line-height: 1.1;
     }
 }
