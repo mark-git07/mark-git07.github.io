@@ -758,7 +758,7 @@ ul li{
         padding-top: 46px;
     }
 
-    .skills .container .content-container .section-title {
+    .skills .container .content-container .section-title{
         padding: 0 15px 40px;
     }
 
@@ -769,7 +769,7 @@ ul li{
     .projects .section-title {
         text-align: center;
         color: #ffffff;
-        padding: 37px 0px 0px;
+        padding: 37px 10px 0px;
     }
 
     .projects-content.column-50{
