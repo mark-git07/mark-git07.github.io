@@ -441,7 +441,7 @@ ul li{
     margin-left: 206px;
 }
 
-.skills-content .skills-img{
+.skills-content .skills-img, .text-center{
     text-align: center;
 }
 
@@ -463,7 +463,7 @@ ul li{
 }
 
 .projects .content-container {
-    padding-bottom: 247px;
+    padding-bottom: 135px;
 }
 
 .projects .section-title{
